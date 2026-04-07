@@ -1,7 +1,11 @@
 aid: auto-owners-insurance
-url: https://raw.githubusercontent.com/api-evangelist/auto-owners-insurance/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/auto-owners-insurance/refs/heads/main/apis.yml
 modified: '2026-03-21'
 apis: []
 common:
   - type: Website
     url: https://www.auto-owners-insurance.com
+description: >-
+  Auto-Owners Insurance is a mutual insurance company offering auto, home, life, business,
+  and farm insurance through a network of independent agents.
