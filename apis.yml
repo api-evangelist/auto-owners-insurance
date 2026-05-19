@@ -24,6 +24,8 @@ modified: '2026-04-19'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/auto-owners-insurance
   - type: Website
     url: https://www.auto-owners.com
   - type: Portal
