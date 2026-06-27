@@ -30,7 +30,7 @@ common:
     url: https://www.auto-owners.com
   - type: Portal
     url: https://www.auto-owners.com/policyholders
-  - type: SignUp
+  - type: Signup
     url: https://www.auto-owners.com/policyholders/create-account
   - type: Support
     url: https://www.auto-owners.com/contact-us
