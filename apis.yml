@@ -24,6 +24,8 @@ modified: '2026-04-19'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/auto-owners-insurance-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/auto-owners-insurance
   - type: Website
@@ -98,6 +100,8 @@ common:
         description: >-
           Adherence to ACORD data standards used in the insurance industry for
           data exchange between carriers, agencies, and industry partners.
+  - url: https://www.auto-owners.com/ao-blog
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
