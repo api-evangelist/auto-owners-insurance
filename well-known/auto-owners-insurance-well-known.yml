@@ -1,0 +1,355 @@
+generated: '2026-09-18'
+method: probed
+source: 'live GET of each /.well-known path (plus /apis.json and /apis.yml) on every host the record and its site
+  name: registrable domain + www, the policyholder Customer Center host, and the independent-agent portal domain
+  aoins.com discovered from the /agent-login page'
+hit_count: 0
+note: 'No host serves a single well-known document. auto-owners.com is a catch-all that 200s the www home page for
+  every path (negative control also 200, so no 200 on that host counts); www.auto-owners.com (Liferay DXP) 404s
+  or 400s every path; customercenter.auto-owners.com 404s every path; www.aoins.com 302s every path to an F5 access-policy
+  login. No WellKnown or SecurityTxt pointer is emitted: a recorded absence is not a served surface.'
+hosts:
+- host: https://auto-owners.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /.well-known/api-catalog.json
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /apis.json
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 302 to the https://www.auto-owners.com/ home page; 200 HTML shell, not a document
+    real_document: false
+    content_type: text/html
+    result: html-catchall
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/auto-owners-insurance-negative-control-627f0dba.json
+    status: 200
+    bytes: 132270
+    final_url: https://www.auto-owners.com/
+    note: apex host redirects EVERY path to the www home page and answers 200 with the same ~130KB HTML, negative
+      control included; no 200 on this host is a document
+- host: https://www.auto-owners.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog.json
+    status: 400
+    file: null
+    note: Liferay DXP '500 Error Page' HTML returned with HTTP 400 for .json paths
+  - path: /.well-known/ai-plugin.json
+    status: 400
+    file: null
+    note: Liferay DXP '500 Error Page' HTML returned with HTTP 400 for .json paths
+  - path: /.well-known/ucp.json
+    status: 400
+    file: null
+    note: Liferay DXP '500 Error Page' HTML returned with HTTP 400 for .json paths
+  - path: /.well-known/acp.json
+    status: 400
+    file: null
+    note: Liferay DXP '500 Error Page' HTML returned with HTTP 400 for .json paths
+  - path: /.well-known/aauth-resource.json
+    status: 400
+    file: null
+    note: Liferay DXP '500 Error Page' HTML returned with HTTP 400 for .json paths
+  - path: /.well-known/apis.json
+    status: 400
+    file: null
+    note: Liferay DXP '500 Error Page' HTML returned with HTTP 400 for .json paths
+  - path: /apis.json
+    status: 400
+    file: null
+    note: Liferay DXP '500 Error Page' HTML returned with HTTP 400 for .json paths
+  - path: /apis.yml
+    status: 400
+    file: null
+    note: Liferay DXP '500 Error Page' HTML returned with HTTP 400 for .json paths
+  - path: /.well-known/agent-card.json
+    status: 400
+    file: null
+    note: Liferay DXP '500 Error Page' HTML returned with HTTP 400 for .json paths
+  - path: /.well-known/agent.json
+    status: 400
+    file: null
+    note: Liferay DXP '500 Error Page' HTML returned with HTTP 400 for .json paths
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/auto-owners-insurance-negative-control-627f0dba.json
+    status: 400
+    bytes: 2000
+- host: https://customercenter.auto-owners.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/auto-owners-insurance-negative-control-cc535b21.json
+    status: 404
+    bytes: 1000
+  note: policyholder Customer Center (SPA behind /cp/sign-in); unauthenticated /cp/* routes 302 to the sign-in page
+- host: https://www.aoins.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /.well-known/openid-configuration
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /.well-known/oauth-authorization-server
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /.well-known/oauth-protected-resource
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /.well-known/api-catalog
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /.well-known/ai-plugin.json
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /.well-known/ucp.json
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /.well-known/acp.json
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /.well-known/aauth-resource.json
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /.well-known/apis.json
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /apis.json
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /apis.yml
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /.well-known/agent-card.json
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  - path: /.well-known/agent.json
+    status: 302
+    file: null
+    note: 302 to /my.policy (F5 APM access-policy login gate)
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/auto-owners-insurance-negative-control-a521684f.json
+    status: 302
+    bytes: 0
+    final_url: https://www.aoins.com/.well-known/auto-owners-insurance-negative-control-a521684f.json
+    note: independent-agent portal host (linked from www.auto-owners.com/agent-login); every path, negative control
+      included, 302s to the /my.policy login gate — nothing is served anonymously
+- host: https://aoins.com
+  documents:
+  - path: /.well-known/security.txt
+    status: connection-reset
+    file: null
+  - path: /.well-known/openid-configuration
+    status: connection-reset
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: connection-reset
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: connection-reset
+    file: null
+  - path: /.well-known/api-catalog
+    status: connection-reset
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: connection-reset
+    file: null
+  - path: /.well-known/ucp.json
+    status: connection-reset
+    file: null
+  - path: /.well-known/acp.json
+    status: connection-reset
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: connection-reset
+    file: null
+  - path: /.well-known/apis.json
+    status: connection-reset
+    file: null
+  - path: /apis.json
+    status: connection-reset
+    file: null
+  - path: /apis.yml
+    status: connection-reset
+    file: null
+  - path: /.well-known/agent-card.json
+    status: connection-reset
+    file: null
+  - path: /.well-known/agent.json
+    status: connection-reset
+    file: null
+  hit_count: 0
+  path_echo_control: not-testable
+  note: apex of the agent-portal domain resets every TLS connection (ECONNRESET); only www.aoins.com answers

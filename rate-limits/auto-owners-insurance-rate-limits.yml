@@ -1,0 +1,28 @@
+generated: '2026-09-18'
+method: searched
+source: >-
+  https://www.auto-owners.com/ (full sitemap walked 2026-09-18), https://www.auto-owners.com/terms-of-use,
+  https://www.auto-owners.com/agency-terms-of-use and https://www.auto-owners.com/about/online-access.
+  No Auto-Owners surface documents an API, so none documents a limit on one.
+description: >-
+  Auto-Owners Insurance publishes no rate limits because it publishes no API to limit. Its
+  online surfaces are a policyholder Customer Center (customercenter.auto-owners.com, a
+  sign-in-gated SPA), a claim tracker, and an independent-agent portal (www.aoins.com) that
+  302s every unauthenticated request to an F5 access-policy login. There are no documented
+  X-RateLimit-* / RateLimit-* headers, no documented 429 behaviour and no Retry-After, because
+  there is no public request/response contract for a caller to exhaust.
+limit_count: 0
+headers: {}
+response_codes: {}
+limits: []
+probes:
+  - url: https://www.auto-owners.com/api
+    status: 404
+    note: JSON body "The requested resource [/api] is not available" — a framework 404, not a gate.
+  - url: https://www.aoins.com/api
+    status: 302
+    note: redirects to /my.policy (F5 APM login) like every other path on that host.
+note: >-
+  limit_count 0 here is a measured zero, not an unchecked field: the public site, both terms-of-use
+  documents and the online-access page were read and contain no quota, throttle or exhaustion
+  behaviour. It is recorded so the absence is legible rather than assumed.

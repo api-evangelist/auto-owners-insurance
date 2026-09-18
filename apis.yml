@@ -42,7 +42,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/auto-owners-insurance/refs/heads/main/apis.yml
 created: '2025-01-01'
-modified: '2026-04-19'
+modified: '2026-09-18'
 specificationVersion: '0.23'
 apis: []
 common:
@@ -52,16 +52,26 @@ common:
     url: https://www.linkedin.com/company/auto-owners-insurance
   - type: Website
     url: https://www.auto-owners.com
-  - type: Portal
-    url: https://www.auto-owners.com/policyholders
-  - type: Signup
-    url: https://www.auto-owners.com/policyholders/create-account
+  - type: CustomerPortal
+    url: https://customercenter.auto-owners.com/cp/sign-in
+  - type: PartnerPortal
+    url: https://www.auto-owners.com/agent-login
   - type: Support
-    url: https://www.auto-owners.com/contact-us
+    url: https://www.auto-owners.com/about/contact-us
   - type: TermsOfService
-    url: https://www.auto-owners.com/privacy-legal/legal
+    url: https://www.auto-owners.com/terms-of-use
   - type: PrivacyPolicy
-    url: https://www.auto-owners.com/privacy-legal/privacy-policy
+    url: https://www.auto-owners.com/privacy
+  - type: Careers
+    url: https://www.auto-owners.com/about/career-opportunities
+  - type: GitHubOrganization
+    url: https://github.com/auto-owners
+  - type: LLMsTxt
+    url: llms/auto-owners-insurance-llms.txt
+  - type: Plans
+    url: plans/auto-owners-insurance-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/auto-owners-insurance-rate-limits.yml
   - type: Features
     data:
       - name: Personal Insurance
@@ -122,8 +132,34 @@ common:
         description: >-
           Adherence to ACORD data standards used in the insurance industry for
           data exchange between carriers, agencies, and industry partners.
-  - url: https://www.auto-owners.com/ao-blog
-    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-18'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Auto-Owners sells policies only through independent agents and ships no developer
+    program: www.auto-owners.com/developers and /api return 404, the apex host redirects
+    every path to the home page, the agent portal www.aoins.com answers every unauthenticated
+    request with a 302 to its F5 /my.policy login, and the company's own GitHub organization
+    has no public repositories.
+  evidence:
+    - url: https://www.auto-owners.com/developers
+      status: 404
+    - url: https://www.auto-owners.com/api
+      status: 404
+    - url: https://www.auto-owners.com/openapi.json
+      status: 400
+    - url: https://www.aoins.com/api
+      status: 302
+    - url: https://customercenter.auto-owners.com/.well-known/agent-card.json
+      status: 404
+    - url: https://github.com/auto-owners
+      status: 200
+  checked: '2026-09-18'

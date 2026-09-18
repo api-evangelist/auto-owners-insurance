@@ -1,0 +1,47 @@
+generated: '2026-09-18'
+method: searched
+source: >-
+  https://www.auto-owners.com/ and its sitemap (162 URLs across 163 sub-sitemaps, fetched
+  2026-09-18). No /pricing, /plans, /developers or /api page exists on any Auto-Owners host:
+  https://www.auto-owners.com/developers returns 404 and the apex host redirects every path to the
+  home page.
+description: >-
+  Auto-Owners Insurance publishes no API plans because it sells no API product. It is a mutual
+  P&C and life insurer that sells policies exclusively through independent agents; every
+  product page on the site ends in "find an agent" (https://www.auto-owners.com/agency-locator),
+  and premiums are quoted by the agent, never listed. There is no developer plan, no free tier,
+  no metered usage and no key that could be billed.
+
+plan_count: 0
+api_plan_count: 0
+pricing_model: agent-quoted insurance premiums; no API commercial model
+currency: null
+free_tier: false
+trial: false
+
+plans: []
+
+commercial_entry_points:
+  - url: https://www.auto-owners.com/agency-locator
+    status: 200
+    kind: find-an-independent-agent locator
+  - url: https://www.auto-owners.com/about/contact-us/become-an-a-o-agency
+    status: 200
+    kind: agency appointment request (the only "partner" onboarding on the site)
+  - url: https://customercenter.auto-owners.com/cp/sign-up
+    status: 200
+    kind: policyholder Customer Center enrollment
+
+probes:
+  - url: https://www.auto-owners.com/developers
+    status: 404
+  - url: https://www.auto-owners.com/api
+    status: 404
+  - url: https://www.auto-owners.com/sitemap.xml
+    status: 200
+    note: 162 page URLs, none pricing-, plan- or developer-related.
+
+note: >-
+  plan_count 0 is the finding, not a gap in this pass. A carrier whose distribution is
+  independent agents has no self-serve price list by design; it is recorded so the absence is
+  countable rather than mistaken for an unprobed field.
