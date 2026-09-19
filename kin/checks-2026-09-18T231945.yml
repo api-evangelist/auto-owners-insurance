@@ -2,16 +2,16 @@
 kin_checks:
   slug: auto-owners-insurance
   schema_version: 0.22.0
-  scored_at: '2026-09-17'
-  run_ts: 2026-09-17T233623
+  scored_at: '2026-09-18'
+  run_ts: 2026-09-18T231945
   note: Actionable checks (missed + partial) in `checks`, plus the ids that did not
     apply in `na`. Everything else in rubric/scoring-0.22.0.yml was earned; counts
     below let you verify that.
   counts:
     total: 136
-    earned: 11
-    partial: 0
-    missed: 84
+    earned: 9
+    partial: 1
+    missed: 85
     na: 41
   checks:
   - id: multiple_apis
@@ -74,11 +74,11 @@ kin_checks:
     status: missed
   - id: webhooks_advertised
     status: missed
-  - id: github_org_present
-    status: missed
   - id: roadmap_present
     status: missed
   - id: examples_published
+    status: missed
+  - id: portal_present
     status: missed
   - id: documentation_present
     status: missed
@@ -100,11 +100,15 @@ kin_checks:
     status: missed
   - id: agent_skill_present
     status: missed
+  - id: blog_present
+    status: missed
   - id: plans_present
     status: missed
   - id: plans_multiple
     status: missed
   - id: pricing_link
+    status: missed
+  - id: sign_up_present
     status: missed
   - id: terms_of_service
     status: missed
@@ -164,8 +168,6 @@ kin_checks:
     status: missed
   - id: openapi_examples
     status: missed
-  - id: rate_limit_signal
-    status: missed
   - id: event_surface_described
     status: missed
   - id: agent_skills
@@ -186,6 +188,10 @@ kin_checks:
     status: missed
   - id: agentic_commerce
     status: missed
+  - id: rate_limit_signal
+    status: partial
+    earned: 3.5
+    detail: 'grade: documented'
   na:
   - asyncapi_3_x
   - channels_defined
