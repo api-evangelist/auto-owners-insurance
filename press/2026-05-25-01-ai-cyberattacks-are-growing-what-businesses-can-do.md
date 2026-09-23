@@ -1,7 +1,9 @@
 ---
 title: 'AI Cyberattacks Are Growing: What Businesses Can Do'
 url: https://www.auto-owners.com/ao-blog/-/blogs/ai-cyberattacks-are-growing-what-businesses-can-do
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Auto-Owners Insurance" press release artificial intelligence'
 position: 1
 source: serpapi-google

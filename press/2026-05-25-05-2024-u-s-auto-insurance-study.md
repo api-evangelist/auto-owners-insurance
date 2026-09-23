@@ -1,7 +1,9 @@
 ---
 title: 2024 U.S. Auto Insurance Study
 url: https://www.jdpower.com/business/press-releases/2024-us-auto-insurance-study
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Auto-Owners Insurance" press release artificial intelligence'
 position: 5
 source: serpapi-google
