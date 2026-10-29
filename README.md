@@ -1,4 +1,4 @@
-# Auto-Owners Insurance (auto-owners-insurance)
+# Auto-Owners Insurance
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,58 +66,93 @@
 
 Auto-Owners Insurance is a mutual insurance company headquartered in Lansing, Michigan, offering auto, home, life, business, and farm insurance products through a network of independent agents. Founded in 1916, the company is consistently rated among the top mutual insurance companies in the United States. Auto-Owners provides online account management, claims filing, and agent portal services but does not currently offer a public developer API.
 
-**URL:** [https://raw.githubusercontent.com/api-evangelist/auto-owners-insurance/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/auto-owners-insurance/refs/heads/main/apis.yml)
+**Areas:** Insurance · Auto Insurance · Home Insurance · Life Insurance · Business Insurance · Mutual Insurance · Independent Agents
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Auto-Owners Insurance on APIs.io
 
-## Tags:
+Everything profiled for Auto-Owners Insurance is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/auto-owners-insurance/](https://apis.io/providers/auto-owners-insurance/)** — or go straight to one of the APIs or properties below.
 
- - Insurance, Auto Insurance, Home Insurance, Life Insurance, Business Insurance, Mutual Insurance, Independent Agents
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2025-01-01
-- **Modified:** 2026-04-19
+#### Security (1)
 
-## Common Properties
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Auto Owners Insurance Domain Security](https://apis.io/security/auto-owners-insurance/auto-owners-insurance-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Auto Owners Insurance Plans Pricing](https://apis.io/plans/auto-owners-insurance/auto-owners-insurance-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Auto Owners Insurance Rate Limits](https://apis.io/rate-limits/auto-owners-insurance/auto-owners-insurance-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.auto-owners.com)
-- [Portal](https://www.auto-owners.com/policyholders)
-- [SignUp](https://www.auto-owners.com/policyholders/create-account)
-- [Support](https://www.auto-owners.com/contact-us)
-- [TermsOfService](https://www.auto-owners.com/privacy-legal/legal)
-- [PrivacyPolicy](https://www.auto-owners.com/privacy-legal/privacy-policy)
+- [Support](https://www.auto-owners.com/about/contact-us)
+- [Terms of service](https://www.auto-owners.com/terms-of-use)
+- [Privacy policy](https://www.auto-owners.com/privacy)
+- [GitHub](https://github.com/auto-owners)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Personal Insurance | Comprehensive personal lines coverage including auto, home, condo, renters, life, and specialty policies such as pet, flood, umbrella, and farm insurance. |
-| Business Insurance | Commercial insurance products including commercial auto, workers compensation, bonds, commercial umbrella, and loss control services for businesses of all sizes. |
-| Independent Agent Network | Access to a nationwide network of independent insurance agents who provide local, personalized expertise and policy management services. |
-| Online Claims Filing | Digital claims submission and tracking for auto, property, and other covered losses through the policyholder online portal. |
-| Online Account Management | Policyholder self-service portal for managing policies, making payments, viewing documents, and tracking claim status. |
-| Road Trouble Assistance | Roadside assistance services for auto policyholders covering towing, battery jump, flat tire, fuel delivery, and lockout assistance. |
+**Kin Score 9.7** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
 
-| Name | Description |
-|------|-------------|
-| Personal Auto Coverage | Protecting personal vehicles with liability, collision, comprehensive, uninsured motorist, and medical payment coverages. |
-| Homeowners Protection | Insuring primary residences against damage, theft, liability, and additional living expenses with customizable coverage options. |
-| Small Business Insurance | Providing commercial insurance packages for small to mid-size businesses covering property, liability, workers compensation, and commercial auto. |
-| Life Insurance Planning | Offering term, universal, and whole life insurance products to help individuals and families plan for long-term financial security. |
-| Farm and Agricultural Insurance | Specialized farm insurance covering farmland, equipment, livestock, and agricultural operations for rural property owners. |
+**Agent readiness 2.5** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Independent Agent Systems | Integration with agency management systems used by independent agents to manage policies, quotes, and client relationships. |
-| ACORD Standards | Adherence to ACORD data standards used in the insurance industry for data exchange between carriers, agencies, and industry partners. |
+**Regulatory alignment 12.3** — Insurance
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/auto-owners-insurance/](https://apis.io/providers/auto-owners-insurance/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** kin@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Auto-Owners Insurance: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/auto-owners-insurance/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
